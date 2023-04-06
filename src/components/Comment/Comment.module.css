@@ -1,0 +1,85 @@
+.comment {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  flex: 1;
+}
+
+.container>footer {
+  margin-top: 1rem;
+}
+
+.container>footer>button {
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  color: var(--gray-400);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  transition: color 0.15s;
+}
+
+.container>footer>button>svg {
+  margin-right: 0.5rem;
+}
+
+.container>footer>button>span::before {
+  padding-inline: .25rem;
+  content: "\2022";
+}
+
+.container>footer>button:hover {
+  color: var(--green-300);
+}
+
+.content {
+  background-color: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.content>header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content>header>div>strong {
+  display: block;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.content>header>div>time {
+  display: block;
+  font-size: .75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.content>header>button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  /* font-size: 0; */
+  border-radius: 2px;
+
+  transition: color 0.15s;
+}
+
+.content>header>button:hover {
+  color: var(--red-300);
+}
+
+.content p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
